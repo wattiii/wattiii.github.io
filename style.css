@@ -6,6 +6,7 @@ h1 {
     margin: 10;
     padding: 10;
     box-sizing: border-box;
+    background: lightblue;
   }
   
   .menu-container {
