@@ -19,3 +19,32 @@ h1 {
     border: 1px solid #fff;  /* For debugging */
     width: 900px;
   }
+  .sidebar {
+    background: transparent;
+    float: right
+  }
+  aside { 
+    float: right;
+    margin: 0 1.5%;
+    width: 30%;
+  }  
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .container {
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 960px;
+  }
+  
+img {
+  background: #eaeaed;
+  border: 1px solid #9799a7;
+  float: right;
+  margin: 8px 0 0 20px;
+  padding: 4px;
+}
