@@ -21,12 +21,14 @@ h1 {
   }
   .sidebar {
     background: transparent;
-    float: right
+    float: right;
+    width: 50%; 
   }
   aside { 
     float: right;
     margin: 0 1.5%;
     width: 30%;
+    display: block;
   }  
   *:before,
   *:after {
