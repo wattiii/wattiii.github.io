@@ -167,7 +167,7 @@ footer {
 
 .button:hover {
   background-color: cadetblue;
-  color: red;
+  color: rgb(160, 9, 9);
 }
 .button {
   transition-duration: 0.4s;
