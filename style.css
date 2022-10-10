@@ -3,38 +3,63 @@
   margin: 10px;
   padding: 10px;
   box-sizing: border-box;
-  background: rgb(1, 1, 31);
+  background: rgb(1, 1, 19);
   color: #9799a7;
 }
 img {
   background: #eaeaed;
   border: 1px solid #9799a7;
-  float:inline-end;
-  margin: 8px 0 0 20px;
   padding: 4px;
+  width: 90%;
 }
-*:before,
+/* *:before,
 *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
+}*/
 .container {
-  margin: 0 auto;
-  padding-block-start: 1px;
-  padding-block-end: 1px;
-  width: 80%;
+  margin: none;
+  padding: 10px;
+  padding: 10px;
+  width: none;
+}
+.container2 {
+  margin: none;
+  padding: 11px;
+  padding: 11px;
+  width: none;
 }
 /********* Header *******/
 header {
-  background: fixed;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: none;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  padding-block-start: 1px;
+  padding-block-end: 1px;
+  width: 100%;
+  background-image: black;
 }
-.page_title {
+h1 {
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  background: none;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
 }
-.page_subtitle {
+h3 {
+  text-align: center;
 }
-.menu_bar {
+.blockquote {
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
 }
 /*********** Body ********/
 #body {
@@ -53,15 +78,14 @@ header {
 }
 .caption-right {
   float: right;
-  margin: 0.5%;
-  width: 50%;
+  margin: 4px;
+  width: 4px;
   display: flex;
 }
 .caption-right li {
   list-style-type: none;
   display: inline-block;
 }
-
 .caption_left {
   float: left;
   margin: 10px;
@@ -80,9 +104,11 @@ aside {
   margin: 0 1.5%;
   width: 30%;
 }
-/******* Footer ******/
-footer {
+.button_pos {
+  text-align: center;
 }
+
+/******* Footer ******/
 .footer_title {
   margin: 10px;
   padding: 10px;
@@ -91,7 +117,6 @@ footer {
   margin: 10px;
   padding: 10px;
 }
-
 .menu-container {
   color: #fff;
   background-color: #5995da; /* Blue */
@@ -129,29 +154,49 @@ footer {
 
 .three_paragraphs {
   display: flex;
-  background-color: darkslategray;
+  background-color: black;
   justify-content: space-evenly;
   border-radius: 12px;
+  flex-wrap: wrap;
+  background-image: black;
 }
 
 .three_paragraphs p {
   color: wheat;
-  width: 33%;
+  font-size: larger;
+  width: 30%;
+  min-width: 150px;
   background-color: black;
+  border-radius: 12px;
+}
+.two_paragraphs {
+  display: flex;
+  background-color: black;
+  justify-content: space-evenly;
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+.two_paragraphs p {
+  /* color: wheat; */
+  width: 95%;
+  min-width: 250px;
+  background-color: none;
   border-radius: 12px;
 }
 .two_columns {
   justify-content: space-evenly;
   display: flex;
+  background-color: darkslategray;
   /* background-color: green; */
 }
 .lower_column {
-  width: 45%;
-
-  /* background-color: red; */
+  width: 47%;
+  background-color: black;
+  border-radius: 12px;
+  /* background-image: linear-gradient(black, darkslategray); */
 }
 .button {
-  background-color: rgb(38, 111, 111);
+  background-color: darkslategray;
   border: none;
   color: wheat;
   padding: 15px 32px;
@@ -160,6 +205,8 @@ footer {
   display: inline-block;
   font-size: 16px;
   border-radius: 12px;
+  box-shadow: 0 10px 10px -2px whitesmoke;
+  background: linear-gradient(to left, rgb(56, 56, 56), darkslategray);
 }
 .button {
   transition-duration: 0.4s;
@@ -173,15 +220,20 @@ footer {
   transition-duration: 0.4s;
 }
 .button2 {
-  background-color: rgb(9, 21, 21);
-  border: none;
+  background-color: black;
+  border: darkslategray;
   color: wheat;
   padding: 15px 32px;
+  padding: darkslategray;
   text-align: center;
   text-decoration: none;
   display: inline-flex;
   font-size: 16px;
   border-radius: 12px;
+  list-style-type: none;
+  background: linear-gradient(to right, #7c0303, #ec4811);
+  box-shadow: 0 10px 10px -2px whitesmoke;
+  min-width: 130px;
 }
 .button2 {
   transition-duration: 0.4s;
@@ -193,6 +245,36 @@ footer {
 }
 .button2 {
   transition-duration: 0.4s;
+}
+.home_button {
+  /* width: auto;
+  height: auto; */
+  background-image: url("/Users/jameswatt/code/wattiii.github.io/uparrow.png");
+}
+.selected {
+  list-style-type: none;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: row;
+}
+/* .flex-container-column {
+
+  flex-wrap: wrap;
+  flex-flow: wrap;
+  justify-content: column;
+  align-items: column;
+  align-content: column;
+}
+
+.flex-container-row {
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+  justify-content: start;
+  align-items: start;
+  align-content: start;
+} */
+
 footer {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
